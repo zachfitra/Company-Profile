@@ -5,12 +5,13 @@ import App from './App.jsx'
 import Navbar from './Components/Navbar.jsx'
 import Footer from './Components/Footer.jsx'
 import 'remixicon/fonts/remixicon.css'
+import Hompage from './Pages/Hompage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
-    {/* <App />
-    <Footer/> */}
+    <Hompage />
+    {/* <Footer/> */}
 
   </StrictMode>,
 )

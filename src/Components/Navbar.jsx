@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { useState } from 'react'
+import logo from '../assets/logo.jpg';
 
 
 const Navbar = () => {
     const [show, setShow]= useState(false) ;
+    const [scroll, setScroll]= useState(false);
+
  const handleClick = () =>{
     setShow(!show);
    
@@ -13,11 +16,26 @@ const Navbar = () => {
 
  let menuActive = show ?"left-0" : "-left-full";
 
+ useEffect(() =>{
+    window.addEventListener("scroll",()=>{
+        if (window.scrollY >5) {
+            console.log("testing");
+            setScroll (true);
+            setShow (false);
+            }else {
+                setScroll (false);
+            }
+    });
+ });
+
+let scrollActive = scroll ? "py-6 bg-white shadow" : "py-4"
+
   return (
-    <div className="navbar fixed w-full transition-all py-7">
+        <div className= {`navbar fixed w-full transition-all ${scrollActive}`} >
         <div className="container mx-auto px-4">
             <div className="navbar-box flex items-center justify-between">
                 <div className="logo">
+                    {/* <img src={logo} alt="logo company" className="w-30 h-auto"/> */}
                     <h1 className="text-2xl font-bold">Nadisa Skincare</h1> 
                 </div>
             <ul className={`flex lg:gap-12 md:static md:bg-transparent md:w-auto md:h-full md:translate-y-0
@@ -33,11 +51,11 @@ const Navbar = () => {
                             <a href="#" className= "font-medium opacity-75" >About Us</a>
                         </li>
                          <li className='flex items-center gap-2'>
-                            <i class="ri-service-line md:hidden block"></i>
+                            <i className="ri-service-line md:hidden block"></i>
                             <a href="#" className= "font-medium opacity-75">Services</a>
                         </li>
                          <li className='flex items-center gap-2'>
-                             <i class="ri-customer-service-2-line md:hidden block"></i>
+                             <i className="ri-customer-service-2-line md:hidden block"></i>
                             <a href="#" className= "font-medium opacity-75"  >Contact</a>
                         </li>
                         
