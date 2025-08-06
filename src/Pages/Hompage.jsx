@@ -18,7 +18,7 @@ const Hompage = () => {
           </div>
         </div>
 
-        <div className="about md:grid grid-cols-2 grid-cols-1 items-center gap-20 md:pt-20 pt-32">
+        <div className="about items-center gap-20 md:pt-20 pt-32">
           <div className="box md:order-1 order-2">
             <img src={AboutImage} alt="about images" />
           </div>
