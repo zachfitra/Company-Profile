@@ -19,7 +19,6 @@ const Navbar = () => {
  useEffect(() =>{
     window.addEventListener("scroll",()=>{
         if (window.scrollY >5) {
-            console.log("testing");
             setScroll (true);
             setShow (false);
             }else {
@@ -41,7 +40,7 @@ let scrollActive = scroll ? "py-6 bg-white shadow" : "py-4"
             <ul className={`flex lg:gap-12 md:static md:bg-transparent md:w-auto md:h-full md:translate-y-0
                 md:text-black md:flex-row md:shadow-none md:p-0 md:m-0 md:transition-none 
                 gap-8 fixed ${menuActive} top-1/2 flex-col px-8 py-6 rounded shadow-lg
-                shadow-slate-300 bg-sky-400 font-bold text-white  transition-all`}>
+                shadow-slate-300 bg-green-500 font-bold text-white  transition-all`}>
                         <li className='flex items-center gap-2 '>
                             <i className="ri-home-2-line md:hidden block "></i>
                             <a href="#" className="font-medium opacity-75 ">Home</a>

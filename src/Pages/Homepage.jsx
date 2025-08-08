@@ -1,11 +1,11 @@
 import React from 'react'
 import HeroImage from '../assets/images/hero.svg';
 import AboutImage from '../assets/images/about.svg';
-import Project1 from '../assets/images/proyek-1.webp';
-import Project2 from '../assets/images/proyek-2.webp';
-import Project3 from '../assets/images/proyek-3.webp';
-import Project4 from '../assets/images/proyek-4.webp';
-import Project5 from '../assets/images/proyek-5.webp';
+import Project1 from '../assets/images/hero1.jpg';
+import Project2 from '../assets/images/hero2.jpg';
+import Project3 from '../assets/images/hero3.jpg';
+import Project4 from '../assets/images/hero4.jpg';
+import Project5 from '../assets/images/hero5.jpg';
 
 const Homepage = () => {
   return (
@@ -89,28 +89,27 @@ const Homepage = () => {
 
         </div>
 
-        <div className="contact pt-20 " id="contact">
-          <div className="contact-box pt-12">
-            <h3 className='text-center lg:text-5xl/tight text-3xl font-medium mb-2 '>Contact</h3>
-          <div className="address grid grid-cols-2">
-          <div className="address-box w-[500px] h-[500px] border-1 rounded-2xl pt-10 ">
+        <div className="contact pt-20 mx-auto " id="contact">
+          <h3 className='text-center lg:text-5xl/tight text-3xl font-medium mb-2 '>Contact</h3>
+          <div className="contact-box pt-10 mx-auto">  
+          <div className="address grid grid-cols-2 gap-7">
+          <div className="address-box w-[500px] h-[500px] border-1 rounded-2xl pt-10 text-center ">
           <p><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta</p>
           <p><strong>Telepon:</strong> +62 812 3456 7890</p>
           <p><strong>Email:</strong> info@nadisaskincare.com</p>
           </div>
 
-          <div className="map pt-10">
+          <div className="map pt-10 mx-auto">
           <iframe
-             title="Google Map"
+          title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.572137774403!2d106.8226956!3d-6.5698045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e8d2b4e5a6b1%3A0x301e8f1fc28b0f0!2sBogor!5e0!3m2!1sid!2sid!4v1690000000000"
              className="map-box w-[500px] h-[500px] border-1 rounded-2xl pt-10"
               allowFullScreen=""
-            loading="lazy"
-      ></iframe>
+            loading="lazy"></iframe>
           </div>
         </div>
         </div>
-        </div>
+      </div>
       
       </div>
       
