@@ -34,8 +34,8 @@ let scrollActive = scroll ? "py-6 bg-white shadow" : "py-4"
         <div className="container mx-auto px-4">
             <div className="navbar-box flex items-center justify-between">
                 <div className="logo">
-                    {/* <img src={logo} alt="logo company" className="w-30 h-auto"/> */}
-                    <h1 className="text-2xl font-bold">My Company</h1> 
+                    {/* <img  src={logo} alt="logo company" className="w-30 h-auto"/> */}
+                    <h1 className="text-2xl font-bold"><a href="#">My Company</a> </h1> 
                 </div>
             <ul className={`flex lg:gap-12 md:static md:bg-transparent md:w-auto md:h-full md:translate-y-0
                 md:text-black md:flex-row md:shadow-none md:p-0 md:m-0 md:transition-none 

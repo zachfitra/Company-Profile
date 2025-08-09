@@ -13,7 +13,7 @@ const Homepage = () => {
       <div className="container mx-auto">
         <div className="hero pt-32 md:grid-cols-2 grid-cols-1 grid items-center gap-20">
           <div className="box">
-            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">Website Company Profile dengan menggunakan<span className="font-bold text-sky-400 underline"> Tailwindcss</span></h1>
+            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">Website Company Profile dengan menggunakan<span className="font-bold text-green-500 underline"> Tailwindcss</span></h1>
             <p className="text-base/8 mb-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, asperiores. Asperiores quas labore eligendi aspernatur neque vero a illum, dicta illo. Et molestias deserunt quibusdam adipisci ex temporibus, laborum voluptatem.</p>
             <a href="#about" className="  bg-green-500 hover:bg-green-600 transition-all py-2 px-4 text-white shadow rounded-full">About Us <i className="ri-eye-line"></i>
             </a>          
@@ -28,7 +28,7 @@ const Homepage = () => {
             <img src={AboutImage} alt="about images" className=" lg:w-[500px] w-[400px] md:mx-0 mx-auto " />
           </div>
           <div className="box md:order-2 order-1">
-            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">About Us<span className="font-bold text-sky-400 underline"> Tailwindcss</span></h1>
+            <h1 className="lg:text-5xl/tight text-3xl font-medium mb-7">About Us<span className="font-bold text-green-500 underline"> Tailwindcss</span></h1>
             <p className="text-base/loose">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, asperiores. Asperiores quas labore eligendi aspernatur neque vero a illum, dicta illo. Et molestias deserunt quibusdam adipisci ex temporibus, laborum voluptatem.</p>
           </div>
 
@@ -91,19 +91,19 @@ const Homepage = () => {
 
         <div className="contact pt-20 mx-auto " id="contact">
           <h3 className='text-center lg:text-5xl/tight text-3xl font-medium mb-2 '>Contact</h3>
-          <div className="contact-box pt-10 mx-auto">  
-          <div className="address grid grid-cols-2 gap-7">
-          <div className="address-box w-[500px] h-[500px] border-1 rounded-2xl pt-10 text-center ">
+          <div className="contact-box pt-10 mx-auto grid grid-cols-2 gap-10">  
+          
+          <div className="address-box w-[500px] h-[500px] border-0 rounded-2xl pt-10 text-center text-2xl ">
           <p><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta</p>
           <p><strong>Telepon:</strong> +62 812 3456 7890</p>
           <p><strong>Email:</strong> info@nadisaskincare.com</p>
           </div>
 
-          <div className="map pt-10 mx-auto">
+          <div className="map pt-10 mx-auto w-[500px] h-[500px] border-0 rounded-2xl pt-10">
           <iframe
           title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.572137774403!2d106.8226956!3d-6.5698045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e8d2b4e5a6b1%3A0x301e8f1fc28b0f0!2sBogor!5e0!3m2!1sid!2sid!4v1690000000000"
-             className="map-box w-[500px] h-[500px] border-1 rounded-2xl pt-10"
+             className="map-box mx-auto w-[500px] h-[400px] fill"
               allowFullScreen=""
             loading="lazy"></iframe>
           </div>
@@ -113,7 +113,7 @@ const Homepage = () => {
       
       </div>
       
-    </div>
+    
   )
 }
 
